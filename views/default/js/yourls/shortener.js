@@ -9,7 +9,7 @@ define(['require', 'jquery', 'elgg'], function(require, $, elgg) {
         var api_url  = $('#yourls-url').attr('data-server');
 
         var response = $.get( api_url, {
-            signature: "05e2685fc7",
+            signature: api_key,
             action:   "shorturl",
             format:   "json",
             url:      url
